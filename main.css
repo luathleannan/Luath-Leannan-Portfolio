@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@import url("https://use.typekit.net/tco4lqn.css");
+
+
+
+html{
+	background-image: url("../img/websitebackground.png");
+}
+
+header{
+	display:flex;
+	justify-content: center;
+	flex-flow: column;
+	
+}
+
+#headerlogo{
+	width:300px;
+	margin: auto;
+
+}
+
+#about{
+	margin-top:100px;
+}
+
+.nav-container {
+  width: 100%; /* Ensures the container spans the full width to allow centering */
+  text-align: center; /* Centers the inline-block nav element within its container */
+  /* Add margin or padding as needed to position it below the image */
+  margin-top: 10px;
+  
+}
+
+/* Navigation Menu Styling */
+nav ul {
+  list-style-type: none; /* Removes default bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  display: inline-block; /* Allows the list to be centered via text-align on parent */
+
+}
+
+nav ul li {
+  display: inline-block; /* Aligns list items horizontally */
+  margin: 0 10px; /* Adds space between links */
+	
+}
+
+nav ul li a {
+  display: block; /* Makes links fill the list item space for a larger clickable area */
+  padding: 8px 16px;
+	color: black;
+	text-decoration: none;
+	font-size:25px;
+	font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+}
+
+p{
+	display:flex;
+	justify-content: center;
+font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h2{
+	display:flex;
+	justify-content: center;
+font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 40px;
+}
+
+footer{
+	display:flex;
+	justify-content:center;
+	
+}
+.image-text-box {
+  display: flex; /* Aligns items horizontally */
+  align-items: center; /* Vertically centers the items */
+  border: 1px solid #ccc; /* Adds a border to create the "box" effect */
+  padding: 20px; /* Space inside the box */
+  margin: 10px; /* Space around the box */
+  width: 75%; /* Adjust width as needed */
+  background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    gap: 20px; /* Adds space between the text and image */
+    justify-content: space-between; /* Distributes available space between items */
+}
+
+.text-content {
+    flex: 1; /* Allows text content to grow and take up half the space */
+    padding-right: 10px; /* Optional: adds some spacing */
+}
+
+.image-content {
+    flex: 1; /* Allows image content to grow and take up the other half */
+}
+
+.image-content img {
+    max-width: 100%; /* Ensures the image is responsive and stays within its container */
+    height: auto;
+    display: block; /* Helps with alignment issues */
+}
