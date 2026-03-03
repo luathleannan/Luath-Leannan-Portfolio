@@ -5,9 +5,14 @@
 
 
 html{
-	background-image: url("../img/websitebackground.png");
+	background:#000;
 }
 
+body{
+	background-image: url("../img/websitebackground.png");
+	width: 70%;
+	margin: auto;
+}
 header{
 	display:flex;
 	justify-content: center;
@@ -16,22 +21,43 @@ header{
 }
 
 #headerlogo{
-	width:300px;
+	width:800px;
 	margin: auto;
 
 }
 
-#about{
+.landinglogo-display{
+	width:50%;
+	display: flex;
+	justify-content: center;
+	margin:auto;
 	margin-top:100px;
+	}
+.landingpagelogo {
+	width:50%;
 }
+
+.containedlogo{
+	width: 260px;
+	}
+	
+
+
+
 
 .nav-container {
   width: 100%; /* Ensures the container spans the full width to allow centering */
   text-align: center; /* Centers the inline-block nav element within its container */
   /* Add margin or padding as needed to position it below the image */
-  margin-top: 10px;
+  margin-top: 4px;
+  margin-bottom: 64px;
   
 }
+
+.pagelink:hover{
+	color: #00d5e8;
+	transform: translateY(-5px);
+	}
 
 /* Navigation Menu Styling */
 nav ul {
@@ -53,7 +79,7 @@ nav ul li a {
   padding: 8px 16px;
 	color: black;
 	text-decoration: none;
-	font-size:25px;
+	font-size:35px;
 	font-family: "futura-pt", sans-serif;
 font-weight: 700;
 font-style: normal;
@@ -74,13 +100,29 @@ h2{
 font-family: "futura-pt", sans-serif;
 font-weight: 700;
 font-style: normal;
-font-size: 40px;
+font-size: 45px;
 }
 
 footer{
 	display:flex;
 	justify-content:center;
+	margin-top:100px;
 	
+	
+}
+
+.contactlist{
+	font-size:15px;
+	}
+
+.contactlist:hover {
+	color: #00d5e8;
+	transform: translateY(-5px);
+}
+
+#mail-icon {
+	width: 20px;
+	transform: translateY(2px);
 }
 .image-text-box {
   display: flex; /* Aligns items horizontally */
@@ -112,4 +154,55 @@ footer{
     max-width: 100%; /* Ensures the image is responsive and stays within its container */
     height: auto;
     display: block; /* Helps with alignment issues */
+}
+
+.featuredsectionboxes {
+	display:flex;
+	justify-content:center;
+	
+}
+
+.featuresectiontitle {
+	margin-top:200px;
+}
+
+
+.teamockimage {
+	width:20%;
+	margin: 12px;
+}
+
+.teamockimage:hover{
+	transform: trannslateY(-6px)
+	}
+
+
+	
+@media (max-width: 1080px){
+	#headerlogo{
+	width:350px;
+	margin: auto;
+
+}
+
+nav ul li a {
+  display: block; /* Makes links fill the list item space for a larger clickable area */
+  padding: 8px 16px;
+	color: black;
+	text-decoration: none;
+	font-size:25px;
+	font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+}
+
+h2{
+	display:flex;
+	justify-content: center;
+font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 25px;
+}
 }
